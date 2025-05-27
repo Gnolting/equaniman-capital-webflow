@@ -8,17 +8,20 @@ const CompanyServices = () => {
     {
       icon: Users,
       title: "Asesoría Empresarial",
-      description: "Consultoría estratégica para optimizar la estructura financiera de su empresa y maximizar la rentabilidad."
+      description: "Consultoría estratégica para optimizar la estructura financiera de su empresa y maximizar la rentabilidad.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: BookOpen,
       title: "Planificación Financiera",
-      description: "Desarrollo de planes financieros personalizados que se adapten a sus objetivos y horizonte de inversión."
+      description: "Desarrollo de planes financieros personalizados que se adapten a sus objetivos y horizonte de inversión.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Calendar,
       title: "Gestión de Inversiones",
-      description: "Administración profesional de carteras de inversión con estrategias diversificadas y gestión de riesgos."
+      description: "Administración profesional de carteras de inversión con estrategias diversificadas y gestión de riesgos.",
+      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -63,13 +66,22 @@ const CompanyServices = () => {
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="bg-blue-100 p-3 rounded-lg">
-                        <service.icon className="w-6 h-6 text-blue-600" />
+                      <div className="flex-shrink-0">
+                        <img 
+                          src={service.image} 
+                          alt={service.title}
+                          className="w-16 h-16 rounded-lg object-cover"
+                        />
                       </div>
-                      <div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                          {service.title}
-                        </h3>
+                      <div className="flex-1">
+                        <div className="flex items-center space-x-3 mb-2">
+                          <div className="bg-blue-100 p-2 rounded-lg">
+                            <service.icon className="w-5 h-5 text-blue-600" />
+                          </div>
+                          <h3 className="text-xl font-semibold text-gray-900">
+                            {service.title}
+                          </h3>
+                        </div>
                         <p className="text-gray-700">
                           {service.description}
                         </p>

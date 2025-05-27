@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, Users, Calendar } from 'lucide-react';
+import { Mail, Users } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactForm = () => {
@@ -54,12 +54,6 @@ const ContactForm = () => {
       title: "Marcelo Bosch",
       content: "Director General",
       description: "Asesor financiero principal"
-    },
-    {
-      icon: Calendar,
-      title: "Horarios",
-      content: "Lun - Vie: 9:00 - 18:00",
-      description: "Buenos Aires, Argentina"
     }
   ];
 
