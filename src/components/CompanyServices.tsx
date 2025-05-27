@@ -26,71 +26,62 @@ const CompanyServices = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Company Story */}
-          <div className="animate-fade-in">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8">
-              Nuestra Empresa
-            </h2>
-            <div className="prose prose-lg text-gray-700 space-y-6">
-              <p>
-                Equaniman Capital nace de la visión de Marcelo Bosch de democratizar 
-                el acceso a asesoría financiera de primer nivel en Argentina. Con más 
-                de una década de experiencia en el sector financiero, hemos construido 
-                una reputación sólida basada en la confianza, transparencia y resultados.
-              </p>
-              <p>
-                Nuestra sede en Buenos Aires nos posiciona estratégicamente para 
-                atender tanto el mercado local como regional, ofreciendo soluciones 
-                financieras innovadoras que se adaptan a las dinámicas económicas 
-                del mercado argentino e internacional.
-              </p>
-              <p>
-                En Equaniman Capital, creemos que cada cliente merece una estrategia 
-                financiera única y personalizada. Nuestro enfoque integral combina 
-                análisis técnico riguroso con un profundo entendimiento de los 
-                objetivos individuales de cada cliente.
-              </p>
-            </div>
+        {/* Company Story */}
+        <div className="mb-16 text-center animate-fade-in">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+            Nuestra Empresa
+          </h2>
+          <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
+            <p>
+              Equaniman Capital nace de la visión de Marcelo Bosch de democratizar 
+              el acceso a asesoría financiera de primer nivel en Argentina. Con más 
+              de una década de experiencia en el sector financiero, hemos construido 
+              una reputación sólida basada en la confianza, transparencia y resultados.
+            </p>
+            <p>
+              Nuestra sede en Buenos Aires nos posiciona estratégicamente para 
+              atender tanto el mercado local como regional, ofreciendo soluciones 
+              financieras innovadoras que se adaptan a las dinámicas económicas 
+              del mercado argentino e internacional.
+            </p>
+            <p>
+              En Equaniman Capital, creemos que cada cliente merece una estrategia 
+              financiera única y personalizada. Nuestro enfoque integral combina 
+              análisis técnico riguroso con un profundo entendimiento de los 
+              objetivos individuales de cada cliente.
+            </p>
           </div>
+        </div>
 
-          {/* Services */}
-          <div className="animate-fade-in">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8">
-              Nuestros Servicios
-            </h2>
-            <div className="space-y-6">
-              {services.map((service, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <img 
-                          src={service.image} 
-                          alt={service.title}
-                          className="w-16 h-16 rounded-lg object-cover"
-                        />
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-center space-x-3 mb-2">
-                          <div className="bg-blue-100 p-2 rounded-lg">
-                            <service.icon className="w-5 h-5 text-blue-600" />
-                          </div>
-                          <h3 className="text-xl font-semibold text-gray-900">
-                            {service.title}
-                          </h3>
-                        </div>
-                        <p className="text-gray-700">
-                          {service.description}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+        {/* Services */}
+        <div className="animate-fade-in">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+            Nuestros Servicios
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {services.map((service, index) => (
+              <Card key={index} className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 aspect-square">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                  style={{
+                    backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.9)), url('${service.image}')`
+                  }}
+                />
+                <CardContent className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center text-white">
+                  <div className="bg-amber-500/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="w-8 h-8 text-amber-400" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-white">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-200 text-sm leading-relaxed opacity-90">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -22,11 +22,11 @@ const Header = () => {
               src="/lovable-uploads/694dbf72-d4ec-4514-84e0-4c7675753a19.png" 
               alt="Equaniman Capital"
               className="h-10 w-auto object-contain"
-              style={{ filter: 'brightness(0) saturate(100%)' }}
+              style={{ filter: 'brightness(0) saturate(100%) invert(1)' }}
             />
             <div>
-              <h1 className="text-lg font-bold text-amber-600">EQUANIMAN</h1>
-              <p className="text-xs text-gray-600">CAPITAL</p>
+              <h1 className="text-lg font-bold text-white">EQUANIMAN</h1>
+              <p className="text-xs text-white/80">CAPITAL</p>
             </div>
           </div>
 
@@ -35,7 +35,7 @@ const Header = () => {
             onClick={handleAdminAccess}
             variant="outline"
             size="sm"
-            className="flex items-center space-x-2 border-amber-600 text-amber-600 hover:bg-amber-50"
+            className="flex items-center space-x-2 border-white/30 text-white hover:bg-white/10 bg-white/5"
           >
             <Settings className="w-4 h-4" />
             <span>Admin</span>
