@@ -2,8 +2,11 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+  
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     contactSection?.scrollIntoView({ behavior: 'smooth' });
@@ -31,19 +34,18 @@ const HeroSection = () => {
         </div>
         
         <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed animate-fade-in text-slate-200">
-          Asesoría financiera profesional que transforma su visión en realidad económica
+          {t('hero.subtitle')}
         </p>
         
         <p className="text-lg md:text-xl mb-12 opacity-90 animate-fade-in text-slate-300 max-w-3xl mx-auto">
-          Con sede en Buenos Aires, ofrecemos soluciones financieras estratégicas 
-          para empresas y particulares que buscan maximizar su potencial económico
+          {t('hero.description')}
         </p>
         
         <Button 
           onClick={scrollToContact}
           className="bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-slate-500/25 transition-all duration-300 animate-scale-in border-0"
         >
-          Contactar a Marcelo Bosch
+          {t('hero.contact_button')}
         </Button>
       </div>
 

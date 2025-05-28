@@ -1,26 +1,28 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, BookOpen, Calendar } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const CompanyServices = () => {
+  const { t } = useLanguage();
+
   const services = [
     {
       icon: Users,
-      title: "Asesoría Empresarial",
-      description: "Consultoría estratégica para optimizar la estructura financiera de su empresa y maximizar la rentabilidad.",
+      title: t('services.business_advisory'),
+      description: t('services.business_advisory_desc'),
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: BookOpen,
-      title: "Planificación Financiera",
-      description: "Desarrollo de planes financieros personalizados que se adapten a sus objetivos y horizonte de inversión.",
+      title: t('services.financial_planning'),
+      description: t('services.financial_planning_desc'),
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Calendar,
-      title: "Gestión de Inversiones",
-      description: "Administración profesional de carteras de inversión con estrategias diversificadas y gestión de riesgos.",
+      title: t('services.investment_management'),
+      description: t('services.investment_management_desc'),
       image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
@@ -31,26 +33,17 @@ const CompanyServices = () => {
         {/* Company Story */}
         <div className="mb-16 text-center animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-8">
-            Nuestra Empresa
+            {t('company.title')}
           </h2>
           <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
             <p>
-              Equaniman Capital nace de la visión de Marcelo Bosch de democratizar 
-              el acceso a asesoría financiera de primer nivel en Argentina. Con más 
-              de una década de experiencia en el sector financiero, hemos construido 
-              una reputación sólida basada en la confianza, transparencia y resultados.
+              {t('company.description1')}
             </p>
             <p>
-              Nuestra sede en Buenos Aires nos posiciona estratégicamente para 
-              atender tanto el mercado local como regional, ofreciendo soluciones 
-              financieras innovadoras que se adaptan a las dinámicas económicas 
-              del mercado argentino e internacional.
+              {t('company.description2')}
             </p>
             <p>
-              En Equaniman Capital, creemos que cada cliente merece una estrategia 
-              financiera única y personalizada. Nuestro enfoque integral combina 
-              análisis técnico riguroso con un profundo entendimiento de los 
-              objetivos individuales de cada cliente.
+              {t('company.description3')}
             </p>
           </div>
         </div>
@@ -58,7 +51,7 @@ const CompanyServices = () => {
         {/* Services */}
         <div className="animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-            Nuestros Servicios
+            {t('services.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {services.map((service, index) => (

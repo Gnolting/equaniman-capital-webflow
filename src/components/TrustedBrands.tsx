@@ -1,7 +1,9 @@
-
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const TrustedBrands = () => {
+  const { t } = useLanguage();
+  
   const brands = [
     { name: "Adecoagro", logo: "/lovable-uploads/98f0b463-f89a-4168-abf2-e9899d269173.png" },
     { name: "MSU", logo: "/lovable-uploads/eb725f12-c330-4668-a817-33a1dc47fe9e.png" },
@@ -13,11 +15,10 @@ const TrustedBrands = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Marcas que Confían en Nosotros
+            {t('brands.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Empresas líderes en diversos sectores han confiado en Equaniman Capital 
-            para optimizar sus estrategias financieras y alcanzar sus objetivos de crecimiento.
+            {t('brands.subtitle')}
           </p>
         </div>
 
