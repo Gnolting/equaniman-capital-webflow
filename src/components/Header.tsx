@@ -9,15 +9,10 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/694dbf72-d4ec-4514-84e0-4c7675753a19.png" 
+              src="/lovable-uploads/0693f403-ef13-42be-b768-e0b436c03ae5.png" 
               alt="Equaniman Capital"
               className="h-10 w-auto object-contain"
-              style={{ filter: 'brightness(0) saturate(100%) invert(1)' }}
             />
-            <div>
-              <h1 className="text-lg font-bold text-white">EQUANIMAN</h1>
-              <p className="text-xs text-white/80">CAPITAL</p>
-            </div>
           </div>
         </div>
       </div>

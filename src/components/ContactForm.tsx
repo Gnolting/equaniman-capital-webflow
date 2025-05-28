@@ -42,7 +42,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-gray-100">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -112,7 +112,7 @@ const ContactForm = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg font-semibold"
+                  className="w-full bg-slate-600 hover:bg-slate-700 text-white py-3 text-lg font-semibold"
                 >
                   Enviar Mensaje
                 </Button>

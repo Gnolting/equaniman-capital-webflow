@@ -66,12 +66,12 @@ const CompanyServices = () => {
                 <div 
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.9)), url('${service.image}')`
+                    backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.9)), url('${service.image}')`
                   }}
                 />
                 <CardContent className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center text-white">
-                  <div className="bg-amber-500/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="w-8 h-8 text-amber-400" />
+                  <div className="bg-gray-500/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="w-8 h-8 text-gray-300" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-white">
                     {service.title}
