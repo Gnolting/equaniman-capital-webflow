@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -28,12 +29,6 @@ const HeroSection = () => {
             className="h-32 md:h-40 lg:h-48 mx-auto mb-6 filter drop-shadow-lg"
           />
         </div>
-        
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in tracking-wide">
-          <span className="text-gray-300">EQUANIMAN</span>
-          <br />
-          <span className="text-slate-200 font-light">CAPITAL</span>
-        </h1>
         
         <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed animate-fade-in text-slate-200">
           Asesoría financiera profesional que transforma su visión en realidad económica
