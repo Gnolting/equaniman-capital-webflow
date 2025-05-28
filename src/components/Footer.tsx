@@ -14,11 +14,6 @@ const Footer = () => {
                 alt="Equaniman Capital"
                 className="h-8 w-auto"
               />
-              <img 
-                src="/lovable-uploads/694dbf72-d4ec-4514-84e0-4c7675753a19.png" 
-                alt="Equaniman Capital"
-                className="h-8 w-auto"
-              />
             </div>
             <p className="text-slate-300 mb-4">
               Asesoría financiera profesional con sede en Buenos Aires, Argentina. 
