@@ -1,17 +1,7 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Settings } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
-  const navigate = useNavigate();
-
-  const handleAdminAccess = () => {
-    // Aquí se implementaría la lógica de autenticación en el futuro
-    navigate('/admin');
-  };
-
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
       <div className="container mx-auto px-4 max-w-6xl">
@@ -29,17 +19,6 @@ const Header = () => {
               <p className="text-xs text-white/80">CAPITAL</p>
             </div>
           </div>
-
-          {/* Admin Button */}
-          <Button
-            onClick={handleAdminAccess}
-            variant="outline"
-            size="sm"
-            className="flex items-center space-x-2 border-white/30 text-white hover:bg-white/10 bg-white/5"
-          >
-            <Settings className="w-4 h-4" />
-            <span>Admin</span>
-          </Button>
         </div>
       </div>
     </header>
