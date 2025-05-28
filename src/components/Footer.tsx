@@ -3,17 +3,21 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white py-12 border-t border-slate-700">
+    <footer className="bg-slate-900 text-white py-12">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-4 mb-4">
+            <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/7f2e3dc3-4a29-41ef-ae6f-4efd30d9199c.png" 
+                src="/lovable-uploads/694dbf72-d4ec-4514-84e0-4c7675753a19.png" 
                 alt="Equaniman Capital"
-                className="h-12 w-auto"
+                className="h-8 w-auto"
               />
+              <div>
+                <h3 className="text-xl font-bold text-amber-400">EQUANIMAN</h3>
+                <p className="text-sm text-slate-400">CAPITAL</p>
+              </div>
             </div>
             <p className="text-slate-300 mb-4">
               Asesoría financiera profesional con sede en Buenos Aires, Argentina. 

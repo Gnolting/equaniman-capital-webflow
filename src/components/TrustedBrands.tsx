@@ -13,13 +13,13 @@ const TrustedBrands = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-900">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-amber-400 mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Marcas que Confían en Nosotros
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Empresas líderes en diversos sectores han confiado en Equaniman Capital 
             para optimizar sus estrategias financieras y alcanzar sus objetivos de crecimiento.
           </p>
@@ -29,7 +29,7 @@ const TrustedBrands = () => {
           {brands.map((brand, index) => (
             <div 
               key={index} 
-              className="flex items-center justify-center p-6 bg-slate-800 border border-slate-700 rounded-lg hover:bg-slate-700 transition-colors duration-300 animate-fade-in"
+              className="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 
@@ -42,7 +42,7 @@ const TrustedBrands = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-slate-400 italic">
+          <p className="text-gray-600 italic">
             * Los logos mostrados son ejemplos. Los logos reales de nuestros clientes 
             se agregarán a través del panel administrativo.
           </p>
