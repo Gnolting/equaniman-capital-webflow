@@ -42,29 +42,29 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-gray-100">
+    <section id="contact" className="py-20 bg-slate-800">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-amber-400 mb-4">
             Contacta con Nosotros
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             ¿Listo para optimizar su estrategia financiera? Contáctenos hoy mismo 
             para una consulta personalizada con Marcelo Bosch.
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <Card className="shadow-lg animate-fade-in">
+          <Card className="shadow-lg animate-fade-in bg-slate-700 border-slate-600">
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">
+              <CardTitle className="text-2xl text-amber-400">
                 Envíanos un Mensaje
               </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name" className="text-gray-700 font-medium">
+                  <Label htmlFor="name" className="text-slate-200 font-medium">
                     Nombre Completo
                   </Label>
                   <Input
@@ -74,13 +74,13 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-2"
+                    className="mt-2 bg-slate-600 border-slate-500 text-white placeholder:text-slate-400"
                     placeholder="Ingrese su nombre completo"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-gray-700 font-medium">
+                  <Label htmlFor="email" className="text-slate-200 font-medium">
                     Correo Electrónico
                   </Label>
                   <Input
@@ -90,13 +90,13 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-2"
+                    className="mt-2 bg-slate-600 border-slate-500 text-white placeholder:text-slate-400"
                     placeholder="su@email.com"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="message" className="text-gray-700 font-medium">
+                  <Label htmlFor="message" className="text-slate-200 font-medium">
                     Mensaje
                   </Label>
                   <Textarea
@@ -105,14 +105,14 @@ const ContactForm = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 min-h-[120px]"
+                    className="mt-2 min-h-[120px] bg-slate-600 border-slate-500 text-white placeholder:text-slate-400"
                     placeholder="Cuéntenos sobre sus necesidades financieras..."
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg font-semibold"
+                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-slate-900 py-3 text-lg font-semibold"
                 >
                   Enviar Mensaje
                 </Button>

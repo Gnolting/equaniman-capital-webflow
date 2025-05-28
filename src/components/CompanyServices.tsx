@@ -26,14 +26,14 @@ const CompanyServices = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section className="py-20 bg-slate-800">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Company Story */}
         <div className="mb-16 text-center animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+          <h2 className="text-4xl font-bold text-amber-400 mb-8">
             Nuestra Empresa
           </h2>
-          <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
+          <div className="max-w-4xl mx-auto prose prose-lg text-slate-300 space-y-6">
             <p>
               Equaniman Capital nace de la visión de Marcelo Bosch de democratizar 
               el acceso a asesoría financiera de primer nivel en Argentina. Con más 
@@ -57,26 +57,26 @@ const CompanyServices = () => {
 
         {/* Services */}
         <div className="animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-amber-400 mb-12 text-center">
             Nuestros Servicios
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {services.map((service, index) => (
-              <Card key={index} className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 aspect-square">
+              <Card key={index} className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 aspect-square bg-slate-700 border-slate-600">
                 <div 
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.9)), url('${service.image}')`
+                    backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.9)), url('${service.image}')`
                   }}
                 />
                 <CardContent className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center text-white">
                   <div className="bg-amber-500/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-amber-400" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-white">
+                  <h3 className="text-xl font-bold mb-4 text-amber-100">
                     {service.title}
                   </h3>
-                  <p className="text-gray-200 text-sm leading-relaxed opacity-90">
+                  <p className="text-slate-200 text-sm leading-relaxed opacity-90">
                     {service.description}
                   </p>
                 </CardContent>

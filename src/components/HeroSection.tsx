@@ -10,33 +10,24 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.75)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
-        }}
-      />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-slate-900">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent"></div>
+      </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         {/* Logo */}
-        <div className="mb-8 animate-fade-in">
+        <div className="mb-12 animate-fade-in">
           <img 
-            src="/lovable-uploads/694dbf72-d4ec-4514-84e0-4c7675753a19.png" 
+            src="/lovable-uploads/7f2e3dc3-4a29-41ef-ae6f-4efd30d9199c.png" 
             alt="Equaniman Capital Logo"
-            className="h-24 md:h-32 mx-auto mb-6 filter drop-shadow-lg"
+            className="h-32 md:h-40 lg:h-48 mx-auto mb-8 filter drop-shadow-2xl"
           />
         </div>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in tracking-wide">
-          <span className="text-amber-400">EQUANIMAN</span>
-          <br />
-          <span className="text-slate-200 font-light">CAPITAL</span>
-        </h1>
-        
-        <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed animate-fade-in text-slate-200">
+        <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed animate-fade-in text-amber-100">
           Asesoría financiera profesional que transforma su visión en realidad económica
         </p>
         
@@ -47,7 +38,7 @@ const HeroSection = () => {
         
         <Button 
           onClick={scrollToContact}
-          className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 animate-scale-in border-0"
+          className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-slate-900 text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 animate-scale-in border-0"
         >
           Contactar a Marcelo Bosch
         </Button>
