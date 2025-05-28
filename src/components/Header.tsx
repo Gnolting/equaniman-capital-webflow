@@ -1,5 +1,6 @@
 
 import React from 'react';
+import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
   return (
@@ -13,6 +14,11 @@ const Header = () => {
               alt="Equaniman Capital"
               className="h-16 w-auto object-contain"
             />
+          </div>
+
+          {/* Language Selector */}
+          <div className="flex items-center">
+            <LanguageSelector />
           </div>
         </div>
       </div>
