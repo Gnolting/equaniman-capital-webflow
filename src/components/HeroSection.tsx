@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -10,7 +9,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -26,7 +25,7 @@ const HeroSection = () => {
           <img 
             src="/lovable-uploads/0693f403-ef13-42be-b768-e0b436c03ae5.png" 
             alt="Equaniman Capital Logo"
-            className="h-24 md:h-32 mx-auto mb-6 filter drop-shadow-lg"
+            className="h-32 md:h-40 lg:h-48 mx-auto mb-6 filter drop-shadow-lg"
           />
         </div>
         
