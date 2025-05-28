@@ -21,12 +21,18 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-        {/* Logo */}
-        <div className="mb-8 animate-fade-in">
+        {/* Both Logos */}
+        <div className="mb-8 animate-fade-in flex items-center justify-center space-x-8">
           <img 
             src="/lovable-uploads/0693f403-ef13-42be-b768-e0b436c03ae5.png" 
-            alt="Equaniman Capital Logo"
-            className="h-24 md:h-32 mx-auto mb-6 filter drop-shadow-lg"
+            alt="Equaniman Capital Logo Principal"
+            className="h-20 md:h-28 filter drop-shadow-lg"
+          />
+          <div className="w-px h-16 md:h-20 bg-slate-400 opacity-50"></div>
+          <img 
+            src="/lovable-uploads/694dbf72-d4ec-4514-84e0-4c7675753a19.png" 
+            alt="Equaniman Capital Logo Secundario"
+            className="h-20 md:h-28 filter drop-shadow-lg"
           />
         </div>
         
