@@ -4,7 +4,7 @@ import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-900/90 to-blue-800/90 backdrop-blur-md border-b border-yellow-600/20">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
