@@ -76,13 +76,10 @@ const CompanyServices = () => {
                   <div className="bg-white/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4"
+                  <h3 className="text-xl font-bold mb-4 text-white px-4 py-2 rounded-lg"
                       style={{
                         background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text',
-                        filter: 'brightness(2)'
+                        boxShadow: '0 4px 15px rgba(0, 71, 171, 0.3)'
                       }}>
                     {service.title}
                   </h3>
