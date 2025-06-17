@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, BookOpen, Calendar } from 'lucide-react';
@@ -44,6 +45,9 @@ const CompanyServices = () => {
             </p>
             <p>
               {t('company.description3')}
+            </p>
+            <p>
+              {t('company.description4')}
             </p>
           </div>
         </div>

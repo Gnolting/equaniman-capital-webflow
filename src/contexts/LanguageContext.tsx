@@ -26,10 +26,11 @@ const translations = {
     'hero.contact_button': 'Contactar a Marcelo Bosch',
     
     // Company Services
-    'company.title': 'Nuestra Empresa',
-    'company.description1': 'Equaniman Capital nace de la visión de Marcelo Bosch de democratizar el acceso a asesoría financiera de primer nivel en Argentina. Con más de una década de experiencia en el sector financiero, hemos construido una reputación sólida basada en la confianza, transparencia y resultados.',
-    'company.description2': 'Nuestra sede en Buenos Aires nos posiciona estratégicamente para atender tanto el mercado local como regional, ofreciendo soluciones financieras innovadoras que se adaptan a las dinámicas económicas del mercado argentino e internacional.',
-    'company.description3': 'En Equaniman Capital, creemos que cada cliente merece una estrategia financiera única y personalizada. Nuestro enfoque integral combina análisis técnico riguroso con un profundo entendimiento de los objetivos individuales de cada cliente.',
+    'company.title': 'Quiénes Somos',
+    'company.description1': 'Equánima Capital es una firma dedicada al asesoramiento empresarial estratégico en Argentina.',
+    'company.description2': 'Nos redefinimos en 2024 para acompañar una nueva era local y global, donde la inteligencia artificial junto a la experiencia e inteligencia emocional humana pasan a ser pilares de nuestro presente.',
+    'company.description3': 'Integramos IE e IA para potenciar empresas, organizaciones y personas que buscan crecer con sentido, precisión y coherencia.',
+    'company.description4': 'Fusionamos inteligencia emocional, experiencia financiera y tecnología exponencial al servicio de la evolución consciente de nuestros clientes en el mundo económico.',
     
     // Services
     'services.title': 'Nuestros Servicios',
@@ -82,10 +83,11 @@ const translations = {
     'hero.contact_button': 'Contact Marcelo Bosch',
     
     // Company Services
-    'company.title': 'Our Company',
-    'company.description1': 'Equaniman Capital was born from Marcelo Bosch\'s vision to democratize access to first-class financial advisory in Argentina. With over a decade of experience in the financial sector, we have built a solid reputation based on trust, transparency and results.',
-    'company.description2': 'Our headquarters in Buenos Aires strategically positions us to serve both local and regional markets, offering innovative financial solutions that adapt to the economic dynamics of the Argentine and international market.',
-    'company.description3': 'At Equaniman Capital, we believe that every client deserves a unique and personalized financial strategy. Our comprehensive approach combines rigorous technical analysis with a deep understanding of each client\'s individual objectives.',
+    'company.title': 'Who We Are',
+    'company.description1': 'Equánima Capital is a firm dedicated to strategic business consulting in Argentina.',
+    'company.description2': 'We redefined ourselves in 2024 to accompany a new local and global era, where artificial intelligence together with human experience and emotional intelligence become pillars of our present.',
+    'company.description3': 'We integrate EI and AI to empower companies, organizations and people who seek to grow with meaning, precision and coherence.',
+    'company.description4': 'We fuse emotional intelligence, financial experience and exponential technology at the service of the conscious evolution of our clients in the economic world.',
     
     // Services
     'services.title': 'Our Services',
