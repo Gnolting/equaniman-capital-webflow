@@ -44,28 +44,28 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-yellow-50 to-blue-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-blue-900 mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
             {t('contact.title')}
           </h2>
-          <p className="text-xl text-blue-700 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <Card className="shadow-lg animate-fade-in border-yellow-200">
-            <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg">
-              <CardTitle className="text-2xl text-yellow-100">
+          <Card className="shadow-lg animate-fade-in">
+            <CardHeader>
+              <CardTitle className="text-2xl text-gray-900">
                 {t('contact.form_title')}
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-6">
+            <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name" className="text-blue-800 font-medium">
+                  <Label htmlFor="name" className="text-gray-700 font-medium">
                     {t('contact.name_label')}
                   </Label>
                   <Input
@@ -75,13 +75,13 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 border-yellow-300 focus:border-blue-500"
+                    className="mt-2"
                     placeholder={t('contact.name_placeholder')}
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-blue-800 font-medium">
+                  <Label htmlFor="email" className="text-gray-700 font-medium">
                     {t('contact.email_label')}
                   </Label>
                   <Input
@@ -91,13 +91,13 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 border-yellow-300 focus:border-blue-500"
+                    className="mt-2"
                     placeholder={t('contact.email_placeholder')}
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="message" className="text-blue-800 font-medium">
+                  <Label htmlFor="message" className="text-gray-700 font-medium">
                     {t('contact.message_label')}
                   </Label>
                   <Textarea
@@ -106,14 +106,14 @@ const ContactForm = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 min-h-[120px] border-yellow-300 focus:border-blue-500"
+                    className="mt-2 min-h-[120px]"
                     placeholder={t('contact.message_placeholder')}
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-blue-900 py-3 text-lg font-semibold"
+                  className="w-full bg-slate-600 hover:bg-slate-700 text-white py-3 text-lg font-semibold"
                 >
                   {t('contact.submit_button')}
                 </Button>
