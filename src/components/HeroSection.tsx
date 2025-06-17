@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.85), rgba(51, 65, 85, 0.75)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
+          backgroundImage: `linear-gradient(rgba(55, 65, 81, 0.85), rgba(75, 85, 99, 0.75)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
         }}
       />
       
@@ -33,17 +33,17 @@ const HeroSection = () => {
           />
         </div>
         
-        <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed animate-fade-in text-slate-200">
+        <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed animate-fade-in text-gray-200">
           {t('hero.subtitle')}
         </p>
         
-        <p className="text-lg md:text-xl mb-12 opacity-90 animate-fade-in text-slate-300 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl mb-12 opacity-90 animate-fade-in text-gray-300 max-w-3xl mx-auto">
           {t('hero.description')}
         </p>
         
         <Button 
           onClick={scrollToContact}
-          className="bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-slate-500/25 transition-all duration-300 animate-scale-in border-0"
+          className="bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-gray-500/25 transition-all duration-300 animate-scale-in border-0"
         >
           {t('hero.contact_button')}
         </Button>

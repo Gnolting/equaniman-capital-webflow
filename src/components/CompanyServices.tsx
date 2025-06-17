@@ -96,8 +96,8 @@ const CompanyServices = () => {
             {differentiators.map((item, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="bg-slate-100 p-3 rounded-full w-fit mx-auto mb-4">
-                    <item.icon className="w-6 h-6 text-slate-600" />
+                  <div className="bg-gray-100 p-3 rounded-full w-fit mx-auto mb-4">
+                    <item.icon className="w-6 h-6 text-gray-600" />
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">
                     {item.title}
@@ -113,7 +113,7 @@ const CompanyServices = () => {
 
         {/* Purpose Section */}
         <div className="mb-16 animate-fade-in">
-          <div className="bg-gradient-to-r from-slate-600 to-slate-700 rounded-lg p-8 text-white text-center">
+          <div className="bg-gradient-to-r from-gray-600 to-gray-700 rounded-lg p-8 text-white text-center">
             <Lightbulb className="w-12 h-12 mx-auto mb-4 text-gray-200" />
             <h3 className="text-3xl font-bold mb-6">
               {t('company.purpose_title')}
@@ -140,7 +140,7 @@ const CompanyServices = () => {
                 <div 
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.9)), url('${service.image}')`
+                    backgroundImage: `linear-gradient(rgba(55, 65, 81, 0.8), rgba(75, 85, 99, 0.9)), url('${service.image}')`
                   }}
                 />
                 <CardContent className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center text-white">
