@@ -13,7 +13,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -27,9 +27,9 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8 animate-fade-in">
           <img 
-            src="/lovable-uploads/e1c0237a-6455-45a6-970d-96740eb7fda6.png" 
-            alt="Equanima Capital Logo"
-            className="h-48 md:h-64 lg:h-80 mx-auto mb-6 filter drop-shadow-lg"
+            src="/lovable-uploads/fe759d1d-312b-463d-b422-451c45bf9d60.png" 
+            alt="Equaniman Capital Logo"
+            className="h-32 md:h-40 lg:h-48 mx-auto mb-6 filter drop-shadow-lg"
           />
         </div>
         

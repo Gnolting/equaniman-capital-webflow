@@ -13,16 +13,16 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/e1c0237a-6455-45a6-970d-96740eb7fda6.png" 
-                alt="Equanima Capital"
-                className="h-16 w-auto"
+                src="/lovable-uploads/fe759d1d-312b-463d-b422-451c45bf9d60.png" 
+                alt="Equaniman Capital"
+                className="h-8 w-auto"
               />
             </div>
             <p className="text-gray-300 mb-4">
               {t('footer.description')}
             </p>
             <p className="text-gray-400 text-sm">
-              © 2024 Equanima Capital. {t('footer.rights')}.
+              © 2024 Equaniman Capital. {t('footer.rights')}.
             </p>
           </div>
 
