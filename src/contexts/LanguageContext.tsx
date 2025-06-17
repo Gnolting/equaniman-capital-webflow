@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'es' | 'en';
@@ -31,6 +30,16 @@ const translations = {
     'company.description2': 'Nos redefinimos en 2024 para acompañar una nueva era local y global, donde la inteligencia artificial junto a la experiencia e inteligencia emocional humana pasan a ser pilares de nuestro presente.',
     'company.description3': 'Integramos IE e IA para potenciar empresas, organizaciones y personas que buscan crecer con sentido, precisión y coherencia.',
     'company.description4': 'Fusionamos inteligencia emocional, experiencia financiera y tecnología exponencial al servicio de la evolución consciente de nuestros clientes en el mundo económico.',
+    
+    // Vision
+    'vision.title': 'Visión',
+    'vision.description1': 'Visualizamos a Equánima Capital como una empresa de servicios en evolución constante, incorporando lo mejor de la tecnología cuántica, la IA generativa y la intuición humana, en la integración de economías, organismos y empresas alineadas con la abundancia y la expansión del potencial humano.',
+    'vision.description2': 'Creemos que las decisiones financieras y estratégicas se toman desde la claridad interior, la conexión con el presente y una visión clara del propósito individual y colectivo de cada organización.',
+    
+    // Purpose
+    'purpose.title': 'Nuestro Propósito',
+    'purpose.description1': 'Elevar la calidad de las decisiones humanas en el mundo económico.',
+    'purpose.description2': 'Asistir en la creación de empresas, proyectos y estructuras prósperas y alineadas con la evolución global del planeta.',
     
     // Services
     'services.title': 'Nuestros Servicios',
@@ -88,6 +97,16 @@ const translations = {
     'company.description2': 'We redefined ourselves in 2024 to accompany a new local and global era, where artificial intelligence together with human experience and emotional intelligence become pillars of our present.',
     'company.description3': 'We integrate EI and AI to empower companies, organizations and people who seek to grow with meaning, precision and coherence.',
     'company.description4': 'We fuse emotional intelligence, financial experience and exponential technology at the service of the conscious evolution of our clients in the economic world.',
+    
+    // Vision
+    'vision.title': 'Vision',
+    'vision.description1': 'We visualize Equánima Capital as a constantly evolving service company, incorporating the best of quantum technology, generative AI and human intuition, in the integration of economies, organisms and companies aligned with abundance and the expansion of human potential.',
+    'vision.description2': 'We believe that financial and strategic decisions are made from inner clarity, connection with the present and a clear vision of the individual and collective purpose of each organization.',
+    
+    // Purpose
+    'purpose.title': 'Our Purpose',
+    'purpose.description1': 'Elevate the quality of human decisions in the economic world.',
+    'purpose.description2': 'Assist in the creation of companies, projects and structures that are prosperous and aligned with the global evolution of the planet.',
     
     // Services
     'services.title': 'Our Services',

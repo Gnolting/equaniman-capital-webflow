@@ -52,6 +52,36 @@ const CompanyServices = () => {
           </div>
         </div>
 
+        {/* Vision */}
+        <div className="mb-16 text-center animate-fade-in">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+            {t('vision.title')}
+          </h2>
+          <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
+            <p>
+              {t('vision.description1')}
+            </p>
+            <p>
+              {t('vision.description2')}
+            </p>
+          </div>
+        </div>
+
+        {/* Purpose */}
+        <div className="mb-16 text-center animate-fade-in">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+            {t('purpose.title')}
+          </h2>
+          <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
+            <p>
+              {t('purpose.description1')}
+            </p>
+            <p>
+              {t('purpose.description2')}
+            </p>
+          </div>
+        </div>
+
         {/* Services */}
         <div className="animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
