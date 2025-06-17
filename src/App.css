@@ -1,11 +1,8 @@
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  font-family: serif;
-  line-height: 1.6;
 }
 
 .logo {
@@ -42,17 +39,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
-h1, h2 {
-  color: #2e2e2e;
-}
-
-.section {
-  margin-bottom: 40px;
-}
-
-.en {
-  color: #555;
-  font-style: italic;
 }
