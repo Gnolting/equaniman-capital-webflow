@@ -15,7 +15,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/e1c0237a-6455-45a6-970d-96740eb7fda6.png" 
                 alt="Equanima Capital"
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             <p className="text-gray-300 mb-4">
