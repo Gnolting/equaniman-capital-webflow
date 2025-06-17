@@ -42,13 +42,13 @@ const translations = {
     'purpose.description2': 'Asistir en la creación de empresas, proyectos y estructuras prósperas y alineadas con la evolución global del planeta.',
     
     // Services
-    'services.title': 'Nuestros Servicios',
-    'services.business_advisory': 'Asesoría Empresarial',
-    'services.business_advisory_desc': 'Consultoría estratégica para optimizar la estructura financiera de su empresa y maximizar la rentabilidad.',
-    'services.financial_planning': 'Planificación Financiera',
-    'services.financial_planning_desc': 'Desarrollo de planes financieros personalizados que se adapten a sus objetivos y horizonte de inversión.',
-    'services.investment_management': 'Gestión de Inversiones',
-    'services.investment_management_desc': 'Administración profesional de carteras de inversión con estrategias diversificadas y gestión de riesgos.',
+    'services.title': 'Nuestro Diferencial',
+    'services.business_advisory': 'Experiencia Senior',
+    'services.business_advisory_desc': 'Socios con décadas de trayectoria en estructuración, mercados financieros y negocios reales.',
+    'services.financial_planning': 'Experiencia Actualizada',
+    'services.financial_planning_desc': 'Asociados jóvenes con experiencia en tecnología, IA y negocios.',
+    'services.investment_management': 'IA como co-creadora',
+    'services.investment_management_desc': 'Usamos inteligencia artificial no como una herramienta más, sino como una inteligencia complementaria que amplifica nuestra visión y precisión.',
     
     // Trusted Brands
     'brands.title': 'Marcas que Confían en Nosotros',
@@ -109,13 +109,13 @@ const translations = {
     'purpose.description2': 'Assist in the creation of companies, projects and structures that are prosperous and aligned with the global evolution of the planet.',
     
     // Services
-    'services.title': 'Our Services',
-    'services.business_advisory': 'Business Advisory',
-    'services.business_advisory_desc': 'Strategic consulting to optimize your company\'s financial structure and maximize profitability.',
-    'services.financial_planning': 'Financial Planning',
-    'services.financial_planning_desc': 'Development of personalized financial plans that adapt to your objectives and investment horizon.',
-    'services.investment_management': 'Investment Management',
-    'services.investment_management_desc': 'Professional management of investment portfolios with diversified strategies and risk management.',
+    'services.title': 'Our Differentiator',
+    'services.business_advisory': 'Senior Experience',
+    'services.business_advisory_desc': 'Partners with decades of experience in structuring, financial markets and real business.',
+    'services.financial_planning': 'Updated Experience',
+    'services.financial_planning_desc': 'Young associates with experience in technology, AI and business.',
+    'services.investment_management': 'IA as co-creator',
+    'services.investment_management_desc': 'We use artificial intelligence not as just another tool, but as a complementary intelligence that amplifies our vision and precision.',
     
     // Trusted Brands
     'brands.title': 'Brands That Trust Us',
