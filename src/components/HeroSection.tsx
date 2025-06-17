@@ -43,7 +43,17 @@ const HeroSection = () => {
         
         <Button 
           onClick={scrollToContact}
-          className="bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-slate-500/25 transition-all duration-300 animate-scale-in border-0"
+          className="text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl transition-all duration-300 animate-scale-in border-0"
+          style={{
+            background: 'linear-gradient(135deg, #0047AB 0%, #8A2BE2 50%, #DA70D6 100%)',
+            boxShadow: '0 25px 50px -12px rgba(0, 71, 171, 0.25)'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = 'linear-gradient(135deg, #003A94 0%, #7A25D2 50%, #CA60C6 100%)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'linear-gradient(135deg, #0047AB 0%, #8A2BE2 50%, #DA70D6 100%)';
+          }}
         >
           {t('hero.contact_button')}
         </Button>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, BookOpen, Calendar } from 'lucide-react';
@@ -11,19 +12,22 @@ const CompanyServices = () => {
       icon: Users,
       title: t('services.business_advisory'),
       description: t('services.business_advisory_desc'),
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      gradient: 'linear-gradient(135deg, rgba(0, 71, 171, 0.9) 0%, rgba(0, 71, 171, 0.95) 100%)'
     },
     {
       icon: BookOpen,
       title: t('services.financial_planning'),
       description: t('services.financial_planning_desc'),
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      gradient: 'linear-gradient(135deg, rgba(138, 43, 226, 0.9) 0%, rgba(138, 43, 226, 0.95) 100%)'
     },
     {
       icon: Calendar,
       title: t('services.investment_management'),
       description: t('services.investment_management_desc'),
-      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      gradient: 'linear-gradient(135deg, rgba(218, 112, 214, 0.9) 0%, rgba(218, 112, 214, 0.95) 100%)'
     }
   ];
 
@@ -59,17 +63,17 @@ const CompanyServices = () => {
                 <div 
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.9)), url('${service.image}')`
+                    backgroundImage: `${service.gradient}, url('${service.image}')`
                   }}
                 />
                 <CardContent className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center text-white">
-                  <div className="bg-gray-500/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="w-8 h-8 text-gray-300" />
+                  <div className="bg-white/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-white">
                     {service.title}
                   </h3>
-                  <p className="text-gray-200 text-sm leading-relaxed opacity-90">
+                  <p className="text-gray-100 text-sm leading-relaxed opacity-90">
                     {service.description}
                   </p>
                 </CardContent>
