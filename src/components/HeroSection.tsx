@@ -27,7 +27,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8 animate-fade-in">
           <img 
-            src="/lovable-uploads/fe759d1d-312b-463d-b422-451c45bf9d60.png" 
+            src="/lovable-uploads/50f95b09-f301-4671-8f8c-89e730eb6460.png" 
             alt="Equaniman Capital Logo"
             className="h-32 md:h-40 lg:h-48 mx-auto mb-6 filter drop-shadow-lg"
           />
