@@ -43,7 +43,18 @@ const HeroSection = () => {
         
         <Button 
           onClick={scrollToContact}
-          className="bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-slate-500/25 transition-all duration-300 animate-scale-in border-0"
+          className="text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-slate-500/25 transition-all duration-300 animate-scale-in border-0"
+          style={{
+            background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
+            backgroundSize: '200% 100%',
+            transition: 'background-position 0.3s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundPosition = 'right center';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundPosition = 'left center';
+          }}
         >
           {t('hero.contact_button')}
         </Button>
