@@ -98,7 +98,22 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: Arial, sans-serif;
+    font-family: serif;
+    margin: 40px;
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    color: #2e2e2e;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .en {
+    color: #555;
+    font-style: italic;
   }
 }
 
