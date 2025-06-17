@@ -54,7 +54,13 @@ const CompanyServices = () => {
 
         {/* Services */}
         <div className="animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center"
+              style={{
+                background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
             {t('services.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -70,7 +76,14 @@ const CompanyServices = () => {
                   <div className="bg-white/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-white">
+                  <h3 className="text-xl font-bold mb-4"
+                      style={{
+                        background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                        filter: 'brightness(2)'
+                      }}>
                     {service.title}
                   </h3>
                   <p className="text-gray-100 text-sm leading-relaxed opacity-90">
