@@ -78,22 +78,16 @@ const CompanyServices = () => {
                 <div 
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(0, 71, 171, 0.8), rgba(138, 43, 226, 0.8), rgba(218, 112, 214, 0.8)), url('${service.image}')`
+                    backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.9)), url('${service.image}')`
                   }}
                 />
                 <CardContent className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center text-white">
                   <div className="bg-gray-500/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-gray-300" />
                   </div>
-                  <div 
-                    className="text-xl font-bold mb-4 px-4 py-2 rounded-lg"
-                    style={{
-                      background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
-                      color: 'white'
-                    }}
-                  >
+                  <h3 className="text-xl font-bold mb-4 text-white">
                     {service.title}
-                  </div>
+                  </h3>
                   <p className="text-gray-200 text-sm leading-relaxed opacity-90">
                     {service.description}
                   </p>
