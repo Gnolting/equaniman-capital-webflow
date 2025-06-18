@@ -24,13 +24,13 @@ const TrustedBrands = () => {
           {brands.map((brand, index) => (
             <div 
               key={index} 
-              className="flex items-center justify-center p-8 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 animate-fade-in"
+              className="flex items-center justify-center p-10 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 
                 src={brand.logo} 
                 alt={brand.name}
-                className="max-h-24 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="max-h-32 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
