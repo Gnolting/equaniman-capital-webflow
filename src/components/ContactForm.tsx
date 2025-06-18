@@ -47,7 +47,7 @@ const ContactForm = () => {
     <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('contact.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -58,7 +58,7 @@ const ContactForm = () => {
         <div className="max-w-2xl mx-auto">
           <Card className="shadow-lg animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">
+              <CardTitle className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
                 {t('contact.form_title')}
               </CardTitle>
             </CardHeader>
