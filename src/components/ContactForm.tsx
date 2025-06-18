@@ -61,7 +61,10 @@ const ContactForm = () => {
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name" className="text-gray-700 font-medium">
+                  <Label 
+                    htmlFor="name" 
+                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-3 py-1 rounded"
+                  >
                     {t('contact.name_label')}
                   </Label>
                   <Input
@@ -77,7 +80,10 @@ const ContactForm = () => {
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-gray-700 font-medium">
+                  <Label 
+                    htmlFor="email" 
+                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-3 py-1 rounded"
+                  >
                     {t('contact.email_label')}
                   </Label>
                   <Input
@@ -93,7 +99,10 @@ const ContactForm = () => {
                 </div>
 
                 <div>
-                  <Label htmlFor="message" className="text-gray-700 font-medium">
+                  <Label 
+                    htmlFor="message" 
+                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-3 py-1 rounded"
+                  >
                     {t('contact.message_label')}
                   </Label>
                   <Textarea
