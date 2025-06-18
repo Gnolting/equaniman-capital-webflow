@@ -12,7 +12,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/3064952f-f6c9-41a3-b308-27c3484324d2.png" 
               alt="Equaniman Capital"
-              className="h-20 w-auto object-contain"
+              className="h-20 w-auto object-contain brightness-0 invert"
             />
           </div>
 

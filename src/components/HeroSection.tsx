@@ -29,7 +29,7 @@ const HeroSection = () => {
           <img 
             src="/lovable-uploads/3064952f-f6c9-41a3-b308-27c3484324d2.png" 
             alt="Equaniman Capital Logo"
-            className="h-40 md:h-52 lg:h-64 xl:h-72 mx-auto mb-6 filter drop-shadow-lg"
+            className="h-40 md:h-52 lg:h-64 xl:h-72 mx-auto mb-6 filter drop-shadow-lg brightness-0 invert"
           />
         </div>
         
