@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -44,7 +43,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-pink-50 to-pink-100">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
@@ -53,16 +52,16 @@ const ContactForm = () => {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <Card className="shadow-lg animate-fade-in border-pink-200 bg-white">
-            <CardHeader className="bg-gradient-to-r from-pink-50 to-pink-100">
-              <CardTitle className="text-2xl text-pink-600">
+          <Card className="shadow-lg animate-fade-in">
+            <CardHeader>
+              <CardTitle className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
                 {t('contact.form_title')}
               </CardTitle>
             </CardHeader>
-            <CardContent className="pt-6">
+            <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name" className="text-pink-700 font-medium">
+                  <Label htmlFor="name" className="text-gray-700 font-medium">
                     {t('contact.name_label')}
                   </Label>
                   <Input
@@ -72,13 +71,13 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 border-pink-200 focus:border-pink-400 focus:ring-pink-400"
+                    className="mt-2"
                     placeholder={t('contact.name_placeholder')}
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-pink-700 font-medium">
+                  <Label htmlFor="email" className="text-gray-700 font-medium">
                     {t('contact.email_label')}
                   </Label>
                   <Input
@@ -88,13 +87,13 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 border-pink-200 focus:border-pink-400 focus:ring-pink-400"
+                    className="mt-2"
                     placeholder={t('contact.email_placeholder')}
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="message" className="text-pink-700 font-medium">
+                  <Label htmlFor="message" className="text-gray-700 font-medium">
                     {t('contact.message_label')}
                   </Label>
                   <Textarea
@@ -103,14 +102,25 @@ const ContactForm = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 min-h-[120px] border-pink-200 focus:border-pink-400 focus:ring-pink-400"
+                    className="mt-2 min-h-[120px]"
                     placeholder={t('contact.message_placeholder')}
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full text-white py-3 text-lg font-semibold transition-all duration-300 bg-pink-500 hover:bg-pink-600"
+                  className="w-full text-white py-3 text-lg font-semibold transition-all duration-300"
+                  style={{
+                    background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
+                    backgroundSize: '200% 100%',
+                    transition: 'background-position 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundPosition = 'right center';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundPosition = 'left center';
+                  }}
                 >
                   {t('contact.submit_button')}
                 </Button>
