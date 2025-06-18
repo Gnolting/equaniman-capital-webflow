@@ -33,7 +33,7 @@ const CompanyServices = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Company Story */}
         <div className="mb-16 text-center animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+          <h2 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('company.title')}
           </h2>
           <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
@@ -54,7 +54,7 @@ const CompanyServices = () => {
 
         {/* Vision */}
         <div className="mb-16 text-center animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+          <h2 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('vision.title')}
           </h2>
           <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
@@ -69,7 +69,7 @@ const CompanyServices = () => {
 
         {/* Services */}
         <div className="animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('services.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
