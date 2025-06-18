@@ -13,7 +13,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -29,7 +29,7 @@ const HeroSection = () => {
           <img 
             src="/lovable-uploads/3064952f-f6c9-41a3-b308-27c3484324d2.png" 
             alt="Equaniman Capital Logo"
-            className="h-40 md:h-52 lg:h-64 xl:h-72 mx-auto mb-6 filter drop-shadow-lg brightness-0 invert"
+            className="h-48 md:h-60 lg:h-80 xl:h-96 mx-auto mb-6 filter drop-shadow-lg brightness-0 invert"
           />
         </div>
         
