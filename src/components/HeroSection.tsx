@@ -13,7 +13,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -23,27 +23,27 @@ const HeroSection = () => {
       />
       
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         {/* Logo */}
-        <div className="mb-8 animate-fade-in">
+        <div className="mb-6 animate-fade-in">
           <img 
             src="/lovable-uploads/3064952f-f6c9-41a3-b308-27c3484324d2.png" 
             alt="Equaniman Capital Logo"
-            className="h-48 md:h-60 lg:h-80 xl:h-96 mx-auto mb-6 filter drop-shadow-lg brightness-0 invert"
+            className="h-32 md:h-40 lg:h-48 xl:h-56 mx-auto mb-4 filter drop-shadow-lg brightness-0 invert"
           />
         </div>
         
-        <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed animate-fade-in text-slate-200">
+        <p className="text-lg md:text-xl mb-6 font-light leading-relaxed animate-fade-in text-slate-200">
           {t('hero.subtitle')}
         </p>
         
-        <p className="text-lg md:text-xl mb-12 opacity-90 animate-fade-in text-slate-300 max-w-3xl mx-auto">
+        <p className="text-base md:text-lg mb-8 opacity-90 animate-fade-in text-slate-300 max-w-2xl mx-auto">
           {t('hero.description')}
         </p>
         
         <Button 
           onClick={scrollToContact}
-          className="text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-2xl hover:shadow-slate-500/25 transition-all duration-300 animate-scale-in border-0"
+          className="text-white text-base px-6 py-3 rounded-lg font-semibold shadow-2xl hover:shadow-slate-500/25 transition-all duration-300 animate-scale-in border-0"
           style={{
             background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
             backgroundSize: '200% 100%',
@@ -61,8 +61,8 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="w-6 h-6 text-gray-400 opacity-70" />
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <ArrowDown className="w-5 h-5 text-gray-400 opacity-70" />
       </div>
     </section>
   );

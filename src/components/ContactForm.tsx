@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -43,27 +44,27 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+    <section id="contact" className="py-16 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('contact.title')}
           </h2>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-xl mx-auto">
           <Card className="shadow-lg animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+              <CardTitle className="text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
                 {t('contact.form_title')}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <Label 
                     htmlFor="name" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-3 py-1 rounded"
+                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
                   >
                     {t('contact.name_label')}
                   </Label>
@@ -74,7 +75,7 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-2"
+                    className="mt-2 text-sm"
                     placeholder={t('contact.name_placeholder')}
                   />
                 </div>
@@ -82,7 +83,7 @@ const ContactForm = () => {
                 <div>
                   <Label 
                     htmlFor="email" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-3 py-1 rounded"
+                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
                   >
                     {t('contact.email_label')}
                   </Label>
@@ -93,7 +94,7 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-2"
+                    className="mt-2 text-sm"
                     placeholder={t('contact.email_placeholder')}
                   />
                 </div>
@@ -101,7 +102,7 @@ const ContactForm = () => {
                 <div>
                   <Label 
                     htmlFor="message" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-3 py-1 rounded"
+                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
                   >
                     {t('contact.message_label')}
                   </Label>
@@ -111,14 +112,14 @@ const ContactForm = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 min-h-[120px]"
+                    className="mt-2 min-h-[100px] text-sm"
                     placeholder={t('contact.message_placeholder')}
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full text-white py-3 text-lg font-semibold transition-all duration-300"
+                  className="w-full text-white py-2 text-base font-semibold transition-all duration-300"
                   style={{
                     background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
                     backgroundSize: '200% 100%',

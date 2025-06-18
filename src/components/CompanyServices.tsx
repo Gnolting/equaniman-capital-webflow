@@ -29,14 +29,14 @@ const CompanyServices = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Company Story */}
-        <div className="mb-16 text-center animate-fade-in">
-          <h2 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+        <div className="mb-12 text-center animate-fade-in">
+          <h2 className="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('company.title')}
           </h2>
-          <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
+          <div className="max-w-4xl mx-auto prose text-gray-700 space-y-4 text-sm md:text-base">
             <p>
               {t('company.description1')}
             </p>
@@ -53,11 +53,11 @@ const CompanyServices = () => {
         </div>
 
         {/* Vision */}
-        <div className="mb-16 text-center animate-fade-in">
-          <h2 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+        <div className="mb-12 text-center animate-fade-in">
+          <h2 className="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('vision.title')}
           </h2>
-          <div className="max-w-4xl mx-auto prose prose-lg text-gray-700 space-y-6">
+          <div className="max-w-4xl mx-auto prose text-gray-700 space-y-4 text-sm md:text-base">
             <p>
               {t('vision.description1')}
             </p>
@@ -69,10 +69,10 @@ const CompanyServices = () => {
 
         {/* Services */}
         <div className="animate-fade-in">
-          <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+          <h2 className="text-3xl font-bold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('services.title')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {services.map((service, index) => (
               <Card key={index} className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 aspect-square">
                 <div 
@@ -81,16 +81,16 @@ const CompanyServices = () => {
                     backgroundImage: `linear-gradient(rgba(0, 71, 171, 0.8), rgba(138, 43, 226, 0.8), rgba(218, 112, 214, 0.8)), url('${service.image}')`
                   }}
                 />
-                <CardContent className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center text-white">
-                  <div className="bg-gray-500/20 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="w-8 h-8 text-gray-300" />
+                <CardContent className="relative z-10 p-6 h-full flex flex-col justify-center items-center text-center text-white">
+                  <div className="bg-gray-500/20 p-3 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="w-6 h-6 text-gray-300" />
                   </div>
                   <div 
-                    className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+                    className="text-lg font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
                   >
                     {service.title}
                   </div>
-                  <p className="text-gray-200 text-sm leading-relaxed opacity-90">
+                  <p className="text-gray-200 text-xs leading-relaxed opacity-90">
                     {service.description}
                   </p>
                 </CardContent>
