@@ -113,7 +113,18 @@ const ContactForm = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-slate-600 hover:bg-slate-700 text-white py-3 text-lg font-semibold"
+                  className="w-full text-white py-3 text-lg font-semibold transition-all duration-300"
+                  style={{
+                    background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
+                    backgroundSize: '200% 100%',
+                    transition: 'background-position 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundPosition = 'right center';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundPosition = 'left center';
+                  }}
                 >
                   {t('contact.submit_button')}
                 </Button>
