@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -50,9 +49,6 @@ const ContactForm = () => {
           <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
             {t('contact.title')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t('contact.subtitle')}
-          </p>
         </div>
 
         <div className="max-w-2xl mx-auto">

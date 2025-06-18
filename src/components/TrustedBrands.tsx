@@ -14,15 +14,6 @@ const TrustedBrands = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
-            {t('brands.title')}
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t('brands.subtitle')}
-          </p>
-        </div>
-
         <div className="flex justify-center items-center gap-12 md:gap-16 flex-wrap">
           {brands.map((brand, index) => (
             <div 
