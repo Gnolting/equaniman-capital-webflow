@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -12,25 +11,28 @@ const TrustedBrands = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
             {t('brands.title')}
           </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {t('brands.subtitle')}
+          </p>
         </div>
 
-        <div className="flex justify-center items-center gap-8 md:gap-12 flex-wrap">
+        <div className="flex justify-center items-center gap-12 md:gap-16 flex-wrap">
           {brands.map((brand, index) => (
             <div 
               key={index} 
-              className="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 animate-fade-in"
+              className="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 
                 src={brand.logo} 
                 alt={brand.name}
-                className="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}

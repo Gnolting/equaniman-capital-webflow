@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'es' | 'en';
@@ -25,30 +26,19 @@ const translations = {
     'hero.contact_button': 'Contactar a Marcelo Bosch',
     
     // Company Services
-    'company.title': 'Quiénes Somos',
-    'company.description1': 'Equánima Capital es una firma dedicada al asesoramiento empresarial estratégico en Argentina.',
-    'company.description2': 'Nos redefinimos en 2024 para acompañar una nueva era local y global, donde la inteligencia artificial junto a la experiencia e inteligencia emocional humana pasan a ser pilares de nuestro presente.',
-    'company.description3': 'Integramos IE e IA para potenciar empresas, organizaciones y personas que buscan crecer con sentido, precisión y coherencia.',
-    'company.description4': 'Fusionamos inteligencia emocional, experiencia financiera y tecnología exponencial al servicio de la evolución consciente de nuestros clientes en el mundo económico.',
-    
-    // Vision
-    'vision.title': 'Visión',
-    'vision.description1': 'Visualizamos a Equánima Capital como una empresa de servicios en evolución constante, incorporando lo mejor de la tecnología cuántica, la IA generativa y la intuición humana, en la integración de economías, organismos y empresas alineadas con la abundancia y la expansión del potencial humano.',
-    'vision.description2': 'Creemos que las decisiones financieras y estratégicas se toman desde la claridad interior, la conexión con el presente y una visión clara del propósito individual y colectivo de cada organización.',
-    
-    // Purpose
-    'purpose.title': 'Nuestro Propósito',
-    'purpose.description1': 'Elevar la calidad de las decisiones humanas en el mundo económico.',
-    'purpose.description2': 'Asistir en la creación de empresas, proyectos y estructuras prósperas y alineadas con la evolución global del planeta.',
+    'company.title': 'Nuestra Empresa',
+    'company.description1': 'Equaniman Capital nace de la visión de Marcelo Bosch de democratizar el acceso a asesoría financiera de primer nivel en Argentina. Con más de una década de experiencia en el sector financiero, hemos construido una reputación sólida basada en la confianza, transparencia y resultados.',
+    'company.description2': 'Nuestra sede en Buenos Aires nos posiciona estratégicamente para atender tanto el mercado local como regional, ofreciendo soluciones financieras innovadoras que se adaptan a las dinámicas económicas del mercado argentino e internacional.',
+    'company.description3': 'En Equaniman Capital, creemos que cada cliente merece una estrategia financiera única y personalizada. Nuestro enfoque integral combina análisis técnico riguroso con un profundo entendimiento de los objetivos individuales de cada cliente.',
     
     // Services
-    'services.title': 'Nuestro Diferencial',
-    'services.business_advisory': 'Experiencia Senior',
-    'services.business_advisory_desc': 'Socios con décadas de trayectoria en estructuración, mercados financieros y negocios reales.',
-    'services.financial_planning': 'Experiencia Actualizada',
-    'services.financial_planning_desc': 'Asociados jóvenes con experiencia en tecnología, IA y negocios.',
-    'services.investment_management': 'IA como co-creadora',
-    'services.investment_management_desc': 'Usamos inteligencia artificial no como una herramienta más, sino como una inteligencia complementaria que amplifica nuestra visión y precisión.',
+    'services.title': 'Nuestros Servicios',
+    'services.business_advisory': 'Asesoría Empresarial',
+    'services.business_advisory_desc': 'Consultoría estratégica para optimizar la estructura financiera de su empresa y maximizar la rentabilidad.',
+    'services.financial_planning': 'Planificación Financiera',
+    'services.financial_planning_desc': 'Desarrollo de planes financieros personalizados que se adapten a sus objetivos y horizonte de inversión.',
+    'services.investment_management': 'Gestión de Inversiones',
+    'services.investment_management_desc': 'Administración profesional de carteras de inversión con estrategias diversificadas y gestión de riesgos.',
     
     // Trusted Brands
     'brands.title': 'Marcas que Confían en Nosotros',
@@ -92,30 +82,19 @@ const translations = {
     'hero.contact_button': 'Contact Marcelo Bosch',
     
     // Company Services
-    'company.title': 'Who We Are',
-    'company.description1': 'Equánima Capital is a firm dedicated to strategic business consulting in Argentina.',
-    'company.description2': 'We redefined ourselves in 2024 to accompany a new local and global era, where artificial intelligence together with human experience and emotional intelligence become pillars of our present.',
-    'company.description3': 'We integrate EI and AI to empower companies, organizations and people who seek to grow with meaning, precision and coherence.',
-    'company.description4': 'We fuse emotional intelligence, financial experience and exponential technology at the service of the conscious evolution of our clients in the economic world.',
-    
-    // Vision
-    'vision.title': 'Vision',
-    'vision.description1': 'We visualize Equánima Capital as a constantly evolving service company, incorporating the best of quantum technology, generative AI and human intuition, in the integration of economies, organisms and companies aligned with abundance and the expansion of human potential.',
-    'vision.description2': 'We believe that financial and strategic decisions are made from inner clarity, connection with the present and a clear vision of the individual and collective purpose of each organization.',
-    
-    // Purpose
-    'purpose.title': 'Our Purpose',
-    'purpose.description1': 'Elevate the quality of human decisions in the economic world.',
-    'purpose.description2': 'Assist in the creation of companies, projects and structures that are prosperous and aligned with the global evolution of the planet.',
+    'company.title': 'Our Company',
+    'company.description1': 'Equaniman Capital was born from Marcelo Bosch\'s vision to democratize access to first-class financial advisory in Argentina. With over a decade of experience in the financial sector, we have built a solid reputation based on trust, transparency and results.',
+    'company.description2': 'Our headquarters in Buenos Aires strategically positions us to serve both local and regional markets, offering innovative financial solutions that adapt to the economic dynamics of the Argentine and international market.',
+    'company.description3': 'At Equaniman Capital, we believe that every client deserves a unique and personalized financial strategy. Our comprehensive approach combines rigorous technical analysis with a deep understanding of each client\'s individual objectives.',
     
     // Services
-    'services.title': 'Our Differentiator',
-    'services.business_advisory': 'Senior Experience',
-    'services.business_advisory_desc': 'Partners with decades of experience in structuring, financial markets and real business.',
-    'services.financial_planning': 'Updated Experience',
-    'services.financial_planning_desc': 'Young associates with experience in technology, AI and business.',
-    'services.investment_management': 'IA as co-creator',
-    'services.investment_management_desc': 'We use artificial intelligence not as just another tool, but as a complementary intelligence that amplifies our vision and precision.',
+    'services.title': 'Our Services',
+    'services.business_advisory': 'Business Advisory',
+    'services.business_advisory_desc': 'Strategic consulting to optimize your company\'s financial structure and maximize profitability.',
+    'services.financial_planning': 'Financial Planning',
+    'services.financial_planning_desc': 'Development of personalized financial plans that adapt to your objectives and investment horizon.',
+    'services.investment_management': 'Investment Management',
+    'services.investment_management_desc': 'Professional management of investment portfolios with diversified strategies and risk management.',
     
     // Trusted Brands
     'brands.title': 'Brands That Trust Us',

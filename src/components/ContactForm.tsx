@@ -44,28 +44,28 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-gradient-to-br from-slate-50 to-gray-100">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
             {t('contact.title')}
           </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {t('contact.subtitle')}
+          </p>
         </div>
 
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <Card className="shadow-lg animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+              <CardTitle className="text-2xl text-gray-900">
                 {t('contact.form_title')}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label 
-                    htmlFor="name" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
-                  >
+                  <Label htmlFor="name" className="text-gray-700 font-medium">
                     {t('contact.name_label')}
                   </Label>
                   <Input
@@ -75,16 +75,13 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 text-sm"
+                    className="mt-2"
                     placeholder={t('contact.name_placeholder')}
                   />
                 </div>
 
                 <div>
-                  <Label 
-                    htmlFor="email" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
-                  >
+                  <Label htmlFor="email" className="text-gray-700 font-medium">
                     {t('contact.email_label')}
                   </Label>
                   <Input
@@ -94,16 +91,13 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 text-sm"
+                    className="mt-2"
                     placeholder={t('contact.email_placeholder')}
                   />
                 </div>
 
                 <div>
-                  <Label 
-                    htmlFor="message" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
-                  >
+                  <Label htmlFor="message" className="text-gray-700 font-medium">
                     {t('contact.message_label')}
                   </Label>
                   <Textarea
@@ -112,25 +106,14 @@ const ContactForm = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 min-h-[100px] text-sm"
+                    className="mt-2 min-h-[120px]"
                     placeholder={t('contact.message_placeholder')}
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full text-white py-2 text-base font-semibold transition-all duration-300"
-                  style={{
-                    background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
-                    backgroundSize: '200% 100%',
-                    transition: 'background-position 0.3s ease'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundPosition = 'right center';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundPosition = 'left center';
-                  }}
+                  className="w-full bg-slate-600 hover:bg-slate-700 text-white py-3 text-lg font-semibold"
                 >
                   {t('contact.submit_button')}
                 </Button>
