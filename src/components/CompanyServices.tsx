@@ -36,27 +36,33 @@ const CompanyServices = () => {
         {/* Interactive Company Information Tabs */}
         <div className="mb-16 animate-fade-in">
           <Tabs defaultValue="quienes-somos" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8 h-14 bg-white/80 backdrop-blur-sm border border-gray-200 shadow-lg">
+            <TabsList className="grid w-full grid-cols-3 mb-8 h-16 bg-white/90 backdrop-blur-sm border-0 shadow-2xl rounded-2xl overflow-hidden">
               <TabsTrigger 
                 value="quienes-somos" 
-                className="text-base font-semibold data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:via-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white transition-all duration-300 flex items-center gap-2"
+                className="relative text-base font-bold h-full rounded-none data-[state=active]:bg-transparent data-[state=active]:text-white transition-all duration-500 flex items-center justify-center gap-3 group overflow-hidden"
               >
-                <Users className="w-5 h-5" />
-                Quiénes Somos
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-data-[state=active]:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gray-100 group-data-[state=active]:bg-transparent group-hover:bg-gray-200 transition-colors duration-300" />
+                <Users className="w-6 h-6 relative z-10 group-data-[state=active]:text-white text-gray-600" />
+                <span className="relative z-10 group-data-[state=active]:text-white text-gray-800">Quiénes Somos</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="vision" 
-                className="text-base font-semibold data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:via-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white transition-all duration-300 flex items-center gap-2"
+                className="relative text-base font-bold h-full rounded-none data-[state=active]:bg-transparent data-[state=active]:text-white transition-all duration-500 flex items-center justify-center gap-3 group overflow-hidden"
               >
-                <Eye className="w-5 h-5" />
-                Visión
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-data-[state=active]:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gray-100 group-data-[state=active]:bg-transparent group-hover:bg-gray-200 transition-colors duration-300" />
+                <Eye className="w-6 h-6 relative z-10 group-data-[state=active]:text-white text-gray-600" />
+                <span className="relative z-10 group-data-[state=active]:text-white text-gray-800">Visión</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="proposito" 
-                className="text-base font-semibold data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:via-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white transition-all duration-300 flex items-center gap-2"
+                className="relative text-base font-bold h-full rounded-none data-[state=active]:bg-transparent data-[state=active]:text-white transition-all duration-500 flex items-center justify-center gap-3 group overflow-hidden"
               >
-                <MessageSquareMore className="w-5 h-5" />
-                Nuestro Propósito
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-data-[state=active]:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gray-100 group-data-[state=active]:bg-transparent group-hover:bg-gray-200 transition-colors duration-300" />
+                <MessageSquareMore className="w-6 h-6 relative z-10 group-data-[state=active]:text-white text-gray-600" />
+                <span className="relative z-10 group-data-[state=active]:text-white text-gray-800">Nuestro Propósito</span>
               </TabsTrigger>
             </TabsList>
 

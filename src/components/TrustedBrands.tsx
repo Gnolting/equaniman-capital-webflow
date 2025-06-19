@@ -20,17 +20,17 @@ const TrustedBrands = () => {
           </h2>
         </div>
 
-        <div className="flex justify-center items-center gap-8 md:gap-12 flex-wrap">
+        <div className="flex justify-center items-center gap-12 md:gap-16 flex-wrap">
           {brands.map((brand, index) => (
             <div 
               key={index} 
-              className="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 animate-fade-in"
+              className="flex items-center justify-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-300 animate-fade-in hover:shadow-lg"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 
                 src={brand.logo} 
                 alt={brand.name}
-                className="max-h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
