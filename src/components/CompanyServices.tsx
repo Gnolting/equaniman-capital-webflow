@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Users, BookOpen, Calendar, Target, Eye, Heart, Lightbulb, Award, TrendingUp } from 'lucide-react';
+import { Users, BookOpen, Calendar, Target, Eye, Heart, Lightbulb, Award, TrendingUp, Compass } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const CompanyServices = () => {
@@ -61,6 +62,15 @@ const CompanyServices = () => {
       icon: Lightbulb,
       title: "Innovación",
       content: t('vision.description2')
+    }
+  ];
+
+  const purposePoints = [
+    {
+      title: "Elevar la calidad de las decisiones humanas en el mundo económico."
+    },
+    {
+      title: "Asistir en la creación de empresas, proyectos y estructuras prósperas y alineadas con la evolución global del planeta."
     }
   ];
 
@@ -144,6 +154,51 @@ const CompanyServices = () => {
                 </h3>
                 <p className="text-gray-700 max-w-2xl mx-auto">
                   Combinamos experiencia, innovación y valores sólidos para crear soluciones financieras que impulsen el crecimiento sostenible de nuestros clientes.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Purpose Section */}
+        <div className="mb-16 animate-fade-in">
+          <h2 className="text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+            Nuestro Propósito
+          </h2>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {purposePoints.map((point, index) => (
+                <Card 
+                  key={index} 
+                  className="group cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-gray-50"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-8">
+                    <div className="flex flex-col items-center text-center space-y-4">
+                      <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-full group-hover:scale-110 transition-transform duration-300">
+                        <Compass className="w-8 h-8 text-white" />
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed font-medium">
+                        {point.title}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            
+            {/* Purpose Summary Card */}
+            <Card className="mt-8 bg-gradient-to-r from-purple-50 to-pink-50 border-none shadow-lg">
+              <CardContent className="p-8 text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full mb-4">
+                  <Compass className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
+                  Compromiso con el Futuro
+                </h3>
+                <p className="text-gray-700 max-w-2xl mx-auto">
+                  Nuestro propósito trasciende los números y las estrategias: buscamos ser catalizadores de decisiones conscientes que generen valor duradero y contribuyan al desarrollo sostenible del ecosistema económico global.
                 </p>
               </CardContent>
             </Card>
