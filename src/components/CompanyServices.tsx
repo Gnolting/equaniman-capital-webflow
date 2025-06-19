@@ -89,18 +89,41 @@ const CompanyServices = () => {
             </TabsContent>
 
             <TabsContent value="proposito" className="mt-8">
-              <div className="text-center max-w-3xl mx-auto">
-                <h2 className="text-2xl font-light mb-8 text-gray-900">
-                  Nuestro Propósito
-                </h2>
-                <div className="space-y-8">
-                  <p className="text-xl font-light text-gray-800 leading-relaxed">
-                    Elevar la calidad de las decisiones humanas en el mundo económico.
-                  </p>
-                  <div className="w-12 h-px bg-gray-300 mx-auto"></div>
-                  <p className="text-gray-600 leading-relaxed">
-                    Asistir en la creación de empresas, proyectos y estructuras prósperas y alineadas con la evolución global del planeta.
-                  </p>
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-bold mb-12 text-center">Nuestro Diferencial</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <Users className="w-8 h-8 text-blue-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-4">Experiencia Comprobada</h3>
+                    <p className="text-gray-600">
+                      Más de 15 años de experiencia en el mercado financiero, asesorando a empresas
+                      de diversos sectores en su crecimiento y consolidación.
+                    </p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <BookOpen className="w-8 h-8 text-green-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-4">Enfoque Personalizado</h3>
+                    <p className="text-gray-600">
+                      Cada cliente es único. Desarrollamos estrategias a medida que se adaptan
+                      perfectamente a los objetivos y características de tu negocio.
+                    </p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <Calendar className="w-8 h-8 text-purple-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-4">Visión Integral</h3>
+                    <p className="text-gray-600">
+                      No solo miramos los números. Analizamos el contexto completo de tu empresa
+                      para ofrecer soluciones que impulsen tu crecimiento sostenible.
+                    </p>
+                  </div>
                 </div>
               </div>
             </TabsContent>
