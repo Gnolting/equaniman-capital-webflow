@@ -70,13 +70,13 @@ const CompanyServices = () => {
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-xl">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-center">
-                    {t('company.title')}
+                    Quiénes Somos
                   </h2>
                   <div className="max-w-4xl mx-auto prose text-gray-700 space-y-4 text-sm md:text-base">
-                    <p>{t('company.description1')}</p>
-                    <p>{t('company.description2')}</p>
-                    <p>{t('company.description3')}</p>
-                    <p>{t('company.description4')}</p>
+                    <p>Equánima Capital es una firma dedicada al asesoramiento empresarial estratégico en Argentina.</p>
+                    <p>Nos redefinimos en 2024 para acompañar una nueva era local y global, donde la inteligencia artificial junto a la experiencia e inteligencia emocional humana pasan a ser pilares de nuestro presente.</p>
+                    <p>Integramos IE e IA para potenciar empresas, organizaciones y personas que buscan crecer con sentido, precisión y coherencia.</p>
+                    <p>Fusionamos inteligencia emocional, experiencia financiera y tecnología exponencial al servicio de la evolución consciente de nuestros clientes en el mundo económico.</p>
                   </div>
                 </CardContent>
               </Card>
@@ -86,7 +86,7 @@ const CompanyServices = () => {
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-xl">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-center">
-                    {t('vision.title')}
+                    Visión
                   </h2>
                   <div className="max-w-4xl mx-auto prose text-gray-700 space-y-4 text-sm md:text-base">
                     <p>{t('vision.description1')}</p>
