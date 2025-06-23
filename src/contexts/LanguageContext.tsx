@@ -22,7 +22,7 @@ const translations = {
     'hero.title': 'Soluciones Financieras Integrales',
     'hero.subtitle': 'Asesoría financiera profesional que transforma su visión en realidad económica',
     'hero.description': 'Con sede en Buenos Aires, ofrecemos soluciones estructurales y financieras para empresas, organizaciones y negocios que buscan maximizar su potencial económico.',
-    'hero.contact_button': 'Contactar a Marcelo Bosch',
+    'hero.contact_button': 'Contactar a Equanima Capital',
     
     // Company Services
     'company.title': 'Quiénes Somos',
@@ -96,7 +96,7 @@ const translations = {
     'hero.title': 'Comprehensive Financial Solutions',
     'hero.subtitle': 'Professional financial advisory that transforms your vision into economic reality',
     'hero.description': 'Based in Buenos Aires, we offer structural and financial solutions for companies, organizations and businesses seeking to maximize their economic potential',
-    'hero.contact_button': 'Contact Marcelo Bosch',
+    'hero.contact_button': 'Contact Equanima Capital',
     
     // Company Services
     'company.title': 'Who We Are',
