@@ -46,8 +46,8 @@ const ContactForm = () => {
       console.log('Email sent successfully:', data);
 
       toast({
-        title: t('contact.success_title'),
-        description: t('contact.success_description'),
+        title: "Message Sent!",
+        description: "Thank you for your message. We'll get back to you soon!",
       });
 
       // Reset form
@@ -60,7 +60,7 @@ const ContactForm = () => {
       console.error('Error sending email:', error);
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again.",
+        description: "Failed to send message. Please try again later.",
         variant: "destructive"
       });
     } finally {

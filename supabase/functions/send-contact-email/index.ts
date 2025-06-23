@@ -23,6 +23,15 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
+    console.log("Processing contact form request...");
+    
+    // Check if API key is available
+    const apiKey = Deno.env.get("RESEND_API_KEY");
+    if (!apiKey) {
+      console.error("RESEND_API_KEY is not set");
+      throw new Error("Email service not configured");
+    }
+    
     const { name, email, message }: ContactEmailRequest = await req.json();
 
     console.log("Sending contact form email:", { name, email });
@@ -47,7 +56,8 @@ const handler = async (req: Request): Promise<Response> => {
 
     return new Response(JSON.stringify({ 
       success: true, 
-      message: "Email sent successfully" 
+      message: "Email sent successfully",
+      id: emailResponse.id
     }), {
       status: 200,
       headers: {
