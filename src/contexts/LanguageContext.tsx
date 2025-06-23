@@ -31,6 +31,11 @@ const translations = {
     'company.description3': 'Integramos IE e IA para potenciar empresas, organizaciones y personas que buscan crecer con sentido, precisión y coherencia.',
     'company.description4': 'Fusionamos inteligencia emocional, experiencia financiera y tecnología exponencial al servicio de la evolución consciente de nuestros clientes en el mundo económico.',
     
+    // Tabs
+    'tabs.who_we_are': 'Quiénes Somos',
+    'tabs.vision': 'Visión',
+    'tabs.purpose': 'Nuestro Propósito',
+    
     // Vision
     'vision.title': 'Visión',
     'vision.description1': 'Visualizamos a Equánima Capital como una empresa de servicios en evolución constante, incorporando lo mejor de la tecnología cuántica, la IA generativa y la intuición humana, en la integración de economías, organismos y empresas alineadas con la abundancia y la expansión del potencial humano.',
@@ -49,6 +54,7 @@ const translations = {
     'services.financial_planning_desc': 'Asociados jóvenes con experiencia en tecnología, IA y negocios.',
     'services.investment_management': 'IA como co-creadora',
     'services.investment_management_desc': 'Usamos inteligencia artificial no como una herramienta más, sino como una inteligencia complementaria que amplifica nuestra visión y precisión.',
+    'services.strategic_consulting': 'Consultoría Estratégica',
     
     // Trusted Brands
     'brands.title': 'Marcas que Confían en Nosotros',
@@ -65,6 +71,7 @@ const translations = {
     'contact.message_label': 'Mensaje',
     'contact.message_placeholder': 'Cuéntenos sobre sus necesidades financieras...',
     'contact.submit_button': 'Enviar Mensaje',
+    'contact.sending': 'Enviando...',
     'contact.success_title': 'Mensaje enviado',
     'contact.success_description': 'Gracias por contactarnos. Nos pondremos en contacto contigo pronto.',
     
@@ -98,6 +105,11 @@ const translations = {
     'company.description3': 'We integrate EI and AI to empower companies, organizations and people who seek to grow with meaning, precision and coherence.',
     'company.description4': 'We fuse emotional intelligence, financial experience and exponential technology at the service of the conscious evolution of our clients in the economic world.',
     
+    // Tabs
+    'tabs.who_we_are': 'Who We Are',
+    'tabs.vision': 'Vision',
+    'tabs.purpose': 'Our Purpose',
+    
     // Vision
     'vision.title': 'Vision',
     'vision.description1': 'We visualize Equánima Capital as a constantly evolving service company, incorporating the best of quantum technology, generative AI and human intuition, in the integration of economies, organisms and companies aligned with abundance and the expansion of human potential.',
@@ -114,8 +126,9 @@ const translations = {
     'services.business_advisory_desc': 'Partners with decades of experience in structuring, financial markets and real business.',
     'services.financial_planning': 'Updated Experience',
     'services.financial_planning_desc': 'Young associates with experience in technology, AI and business.',
-    'services.investment_management': 'IA as co-creator',
+    'services.investment_management': 'AI as co-creator',
     'services.investment_management_desc': 'We use artificial intelligence not as just another tool, but as a complementary intelligence that amplifies our vision and precision.',
+    'services.strategic_consulting': 'Strategic Consulting',
     
     // Trusted Brands
     'brands.title': 'Brands That Trust Us',
@@ -132,6 +145,7 @@ const translations = {
     'contact.message_label': 'Message',
     'contact.message_placeholder': 'Tell us about your financial needs...',
     'contact.submit_button': 'Send Message',
+    'contact.sending': 'Sending...',
     'contact.success_title': 'Message sent',
     'contact.success_description': 'Thank you for contacting us. We will get in touch with you soon.',
     

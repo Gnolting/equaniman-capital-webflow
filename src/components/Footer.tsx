@@ -33,7 +33,7 @@ const Footer = () => {
               <li className="hover:text-gray-200 transition-colors cursor-pointer">{t('services.business_advisory')}</li>
               <li className="hover:text-gray-200 transition-colors cursor-pointer">{t('services.financial_planning')}</li>
               <li className="hover:text-gray-200 transition-colors cursor-pointer">{t('services.investment_management')}</li>
-              <li className="hover:text-gray-200 transition-colors cursor-pointer">Consultoría Estratégica</li>
+              <li className="hover:text-gray-200 transition-colors cursor-pointer">{t('services.strategic_consulting')}</li>
             </ul>
           </div>
 

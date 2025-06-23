@@ -165,7 +165,7 @@ const ContactForm = () => {
                     }
                   }}
                 >
-                  {isSubmitting ? 'Sending...' : t('contact.submit_button')}
+                  {isSubmitting ? t('contact.sending') : t('contact.submit_button')}
                 </Button>
               </form>
             </CardContent>
