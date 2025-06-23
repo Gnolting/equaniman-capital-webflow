@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -78,18 +77,18 @@ const ContactForm = () => {
         </div>
 
         <div className="max-w-xl mx-auto">
-          <Card className="shadow-lg animate-fade-in">
-            <CardHeader>
-              <CardTitle className="text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+          <Card className="bg-white border border-gray-200 rounded-lg shadow-sm animate-fade-in">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-lg bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-center">
                 {t('contact.form_title')}
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-5">
+            <CardContent className="pt-0">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <Label 
                     htmlFor="name" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
+                    className="text-sm font-medium text-gray-700 mb-1 block"
                   >
                     {t('contact.name_label')}
                   </Label>
@@ -100,7 +99,7 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 text-sm"
+                    className="w-full border-gray-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                     placeholder={t('contact.name_placeholder')}
                     disabled={isSubmitting}
                   />
@@ -109,7 +108,7 @@ const ContactForm = () => {
                 <div>
                   <Label 
                     htmlFor="email" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
+                    className="text-sm font-medium text-gray-700 mb-1 block"
                   >
                     {t('contact.email_label')}
                   </Label>
@@ -120,7 +119,7 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 text-sm"
+                    className="w-full border-gray-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                     placeholder={t('contact.email_placeholder')}
                     disabled={isSubmitting}
                   />
@@ -129,7 +128,7 @@ const ContactForm = () => {
                 <div>
                   <Label 
                     htmlFor="message" 
-                    className="text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 px-2 py-1 rounded text-sm"
+                    className="text-sm font-medium text-gray-700 mb-1 block"
                   >
                     {t('contact.message_label')}
                   </Label>
@@ -139,7 +138,7 @@ const ContactForm = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 min-h-[100px] text-sm"
+                    className="w-full min-h-[100px] border-gray-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 resize-none"
                     placeholder={t('contact.message_placeholder')}
                     disabled={isSubmitting}
                   />
@@ -148,22 +147,7 @@ const ContactForm = () => {
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full text-white py-2 text-base font-semibold transition-all duration-300"
-                  style={{
-                    background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
-                    backgroundSize: '200% 100%',
-                    transition: 'background-position 0.3s ease'
-                  }}
-                  onMouseEnter={(e) => {
-                    if (!isSubmitting) {
-                      e.currentTarget.style.backgroundPosition = 'right center';
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (!isSubmitting) {
-                      e.currentTarget.style.backgroundPosition = 'left center';
-                    }
-                  }}
+                  className="w-full h-10 text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 transition-all duration-200 border-0 rounded-md"
                 >
                   {isSubmitting ? t('contact.sending') : t('contact.submit_button')}
                 </Button>
