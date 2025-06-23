@@ -15,12 +15,9 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/5eb33c52-dfae-4ed9-b96e-c863801e71b5.png" 
                 alt="Equaniman Capital"
-                className="h-20 w-auto brightness-0 invert"
+                className="h-32 w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-slate-300 mb-3 text-sm">
-              {t('footer.description')}
-            </p>
             <p className="text-slate-400 text-xs">
               © 2024 Equaniman Capital. {t('footer.rights')}.
             </p>
@@ -43,7 +40,6 @@ const Footer = () => {
             <div className="space-y-1 text-slate-300 text-sm">
               <p className="hover:text-gray-200 transition-colors">{t('footer.location')}</p>
               <p className="hover:text-gray-200 transition-colors">{t('footer.email')}</p>
-              <p className="hover:text-gray-200 transition-colors">{t('footer.hours')}</p>
             </div>
           </div>
         </div>
