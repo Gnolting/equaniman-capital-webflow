@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '../contexts/LanguageContext';
+import { supabase } from '@/integrations/supabase/client';
 
 const ContactForm = () => {
   const { t } = useLanguage();
@@ -15,6 +16,7 @@ const ContactForm = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -25,22 +27,45 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
     
-    // Here you would typically send the data to your backend
-    toast({
-      title: t('contact.success_title'),
-      description: t('contact.success_description'),
-    });
+    try {
+      console.log('Sending contact form data:', formData);
+      
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+      if (error) {
+        console.error('Supabase function error:', error);
+        throw error;
+      }
+
+      console.log('Email sent successfully:', data);
+
+      toast({
+        title: t('contact.success_title'),
+        description: t('contact.success_description'),
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -77,6 +102,7 @@ const ContactForm = () => {
                     required
                     className="mt-2 text-sm"
                     placeholder={t('contact.name_placeholder')}
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -96,6 +122,7 @@ const ContactForm = () => {
                     required
                     className="mt-2 text-sm"
                     placeholder={t('contact.email_placeholder')}
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -114,11 +141,13 @@ const ContactForm = () => {
                     required
                     className="mt-2 min-h-[100px] text-sm"
                     placeholder={t('contact.message_placeholder')}
+                    disabled={isSubmitting}
                   />
                 </div>
 
                 <Button 
                   type="submit" 
+                  disabled={isSubmitting}
                   className="w-full text-white py-2 text-base font-semibold transition-all duration-300"
                   style={{
                     background: 'linear-gradient(to right, #0047AB, #8A2BE2, #DA70D6)',
@@ -126,13 +155,17 @@ const ContactForm = () => {
                     transition: 'background-position 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundPosition = 'right center';
+                    if (!isSubmitting) {
+                      e.currentTarget.style.backgroundPosition = 'right center';
+                    }
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundPosition = 'left center';
+                    if (!isSubmitting) {
+                      e.currentTarget.style.backgroundPosition = 'left center';
+                    }
                   }}
                 >
-                  {t('contact.submit_button')}
+                  {isSubmitting ? 'Sending...' : t('contact.submit_button')}
                 </Button>
               </form>
             </CardContent>
