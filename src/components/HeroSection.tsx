@@ -24,12 +24,12 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto py-8">
-        {/* Logo - Reduced size for better proportion */}
+        {/* Logo - Enlarged significantly */}
         <div className="mb-4 animate-fade-in">
           <img 
             src="/lovable-uploads/5eb33c52-dfae-4ed9-b96e-c863801e71b5.png" 
             alt="Equanima Capital Logo"
-            className="h-32 md:h-40 lg:h-48 mx-auto mb-3 filter drop-shadow-lg brightness-0 invert"
+            className="h-48 md:h-56 lg:h-64 xl:h-72 mx-auto mb-3 filter drop-shadow-lg brightness-0 invert"
           />
         </div>
         
