@@ -10,7 +10,7 @@ const Header = () => {
           {/* Logo - Made even larger */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/34a4d844-24e9-4785-ae19-78e676e74c01.png" 
+              src="/lovable-uploads/bd1fa329-19bd-4864-bb04-d2f776fccda4.png" 
               alt="Equaniman Capital"
               className="h-28 w-auto object-contain"
             />
