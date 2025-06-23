@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -36,33 +35,27 @@ const CompanyServices = () => {
         {/* Interactive Company Information Tabs */}
         <div className="mb-16 animate-fade-in">
           <Tabs defaultValue="quienes-somos" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8 h-16 bg-white/90 backdrop-blur-sm border-0 shadow-2xl rounded-2xl overflow-hidden">
+            <TabsList className="grid w-full grid-cols-3 mb-8 h-12 bg-white border border-gray-200 rounded-lg p-1">
               <TabsTrigger 
                 value="quienes-somos" 
-                className="relative text-base font-bold h-full rounded-none data-[state=active]:bg-transparent data-[state=active]:text-white transition-all duration-500 flex items-center justify-center gap-3 group overflow-hidden"
+                className="flex items-center justify-center gap-2 text-sm font-medium text-gray-600 data-[state=active]:text-blue-600 data-[state=active]:bg-blue-50 rounded-md transition-all duration-200 hover:text-gray-800"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-data-[state=active]:opacity-100 transition-opacity duration-500" />
-                <div className="absolute inset-0 bg-gray-100 group-data-[state=active]:bg-transparent group-hover:bg-gray-200 transition-colors duration-300" />
-                <Users className="w-6 h-6 relative z-10 group-data-[state=active]:text-white text-gray-600" />
-                <span className="relative z-10 group-data-[state=active]:text-white text-gray-800">{t('tabs.who_we_are')}</span>
+                <Users className="w-4 h-4" />
+                <span>{t('tabs.who_we_are')}</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="vision" 
-                className="relative text-base font-bold h-full rounded-none data-[state=active]:bg-transparent data-[state=active]:text-white transition-all duration-500 flex items-center justify-center gap-3 group overflow-hidden"
+                className="flex items-center justify-center gap-2 text-sm font-medium text-gray-600 data-[state=active]:text-blue-600 data-[state=active]:bg-blue-50 rounded-md transition-all duration-200 hover:text-gray-800"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-data-[state=active]:opacity-100 transition-opacity duration-500" />
-                <div className="absolute inset-0 bg-gray-100 group-data-[state=active]:bg-transparent group-hover:bg-gray-200 transition-colors duration-300" />
-                <Eye className="w-6 h-6 relative z-10 group-data-[state=active]:text-white text-gray-600" />
-                <span className="relative z-10 group-data-[state=active]:text-white text-gray-800">{t('tabs.vision')}</span>
+                <Eye className="w-4 h-4" />
+                <span>{t('tabs.vision')}</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="proposito" 
-                className="relative text-base font-bold h-full rounded-none data-[state=active]:bg-transparent data-[state=active]:text-white transition-all duration-500 flex items-center justify-center gap-3 group overflow-hidden"
+                className="flex items-center justify-center gap-2 text-sm font-medium text-gray-600 data-[state=active]:text-blue-600 data-[state=active]:bg-blue-50 rounded-md transition-all duration-200 hover:text-gray-800"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-data-[state=active]:opacity-100 transition-opacity duration-500" />
-                <div className="absolute inset-0 bg-gray-100 group-data-[state=active]:bg-transparent group-hover:bg-gray-200 transition-colors duration-300" />
-                <MessageSquareMore className="w-6 h-6 relative z-10 group-data-[state=active]:text-white text-gray-600" />
-                <span className="relative z-10 group-data-[state=active]:text-white text-gray-800">{t('tabs.purpose')}</span>
+                <MessageSquareMore className="w-4 h-4" />
+                <span>{t('tabs.purpose')}</span>
               </TabsTrigger>
             </TabsList>
 
