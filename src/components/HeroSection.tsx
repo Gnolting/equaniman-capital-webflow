@@ -33,10 +33,6 @@ const HeroSection = () => {
           />
         </div>
         
-        <p className="text-lg md:text-xl mb-4 font-light leading-relaxed animate-fade-in text-slate-200">
-          {t('hero.subtitle')}
-        </p>
-        
         <p className="text-base md:text-lg mb-6 opacity-90 animate-fade-in text-slate-300 max-w-2xl mx-auto">
           {t('hero.description')}
         </p>
