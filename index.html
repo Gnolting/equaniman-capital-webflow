@@ -5,67 +5,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/lovable-uploads/bd1fa329-19bd-4864-bb04-d2f776fccda4.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Cache control ultra agresivo -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0, private" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <meta name="cache-control" content="max-age=0, no-cache, no-store, must-revalidate" />
-    <meta name="last-modified" content="2024-12-25T16:00:00Z" />
-    <meta name="etag" content="v20241225-1600-FORCE" />
-    <meta name="version" content="FINAL-UPDATE-20241225" />
-    
+    <meta name="cache-control" content="max-age=0" />
+    <meta name="last-modified" content="2024-12-25T12:00:00Z" />
     <title>Equanima Capital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
-      // Script ultra agresivo para forzar actualización
-      console.log('🔄 FORZANDO ACTUALIZACIÓN DE CACHÉ - v20241225-1600');
-      
-      // Limpiar todos los tipos de caché posibles
+      // Force cache refresh
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          console.log('🧹 Limpiando service workers...');
           for(let registration of registrations) {
             registration.unregister();
           }
-        });
-      }
-      
-      // Limpiar localStorage y sessionStorage
-      try {
-        localStorage.clear();
-        sessionStorage.clear();
-        console.log('🧹 Storage limpiado');
-      } catch(e) {
-        console.log('No se pudo limpiar storage:', e);
-      }
-      
-      // Forzar recarga con timestamp único
-      const currentTime = new Date().getTime();
-      const forceParam = 'force_' + currentTime;
-      
-      if (window.location.search.indexOf(forceParam) === -1) {
-        const separator = window.location.search ? '&' : '?';
-        console.log('🔄 Redirigiendo con parámetro de fuerza:', forceParam);
-        window.location.href = window.location.href + separator + forceParam + '=true';
-      } else {
-        console.log('✅ Página cargada con fuerza de actualización');
-      }
-      
-      // Deshabilitar caché del navegador para esta sesión
-      if ('caches' in window) {
-        caches.keys().then(function(names) {
-          names.forEach(function(name) {
-            caches.delete(name);
-          });
         });
       }
     </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx?v=20241225-1600&force=cache&t=${new Date().getTime()}"></script>
+    <script type="module" src="/src/main.tsx?v=20241225"></script>
   </body>
 </html>

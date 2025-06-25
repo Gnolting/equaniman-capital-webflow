@@ -55,9 +55,9 @@ const HeroSection = () => {
           {t('hero.contact_button')}
         </Button>
         
-        {/* Indicador de versión ULTRA VISIBLE */}
-        <div className="mt-8 px-6 py-4 bg-red-600 rounded-xl text-white text-lg font-bold border-4 border-yellow-400 shadow-2xl animate-pulse">
-          🚨 NUEVA VERSIÓN: 25-DIC-2024 16:00 🚨
+        {/* Version indicator for debugging */}
+        <div className="mt-8 text-xs opacity-50">
+          v2024.12.25
         </div>
       </div>
 
