@@ -54,6 +54,11 @@ const HeroSection = () => {
         >
           {t('hero.contact_button')}
         </Button>
+        
+        {/* Version indicator for debugging */}
+        <div className="mt-8 text-xs opacity-50">
+          v2024.12.25
+        </div>
       </div>
 
       {/* Scroll Indicator */}
