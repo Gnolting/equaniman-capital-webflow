@@ -44,19 +44,6 @@ const HeroSection = () => {
             className="h-48 md:h-56 lg:h-64 xl:h-72 mx-auto mb-3 filter drop-shadow-lg"
           />
         </div>
-
-        {/* Experience Labels */}
-        <div className="flex flex-wrap justify-center gap-3 mb-6 animate-fade-in">
-          <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium text-white border border-white/30">
-            Experiencia Senior
-          </span>
-          <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium text-white border border-white/30">
-            Experiencia Actualizada
-          </span>
-          <span className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium text-white border border-white/30">
-            IA como co creadora
-          </span>
-        </div>
         
         <p className="text-base md:text-lg mb-6 opacity-90 animate-fade-in text-blue-100 max-w-2xl mx-auto">
           {t('hero.description')}

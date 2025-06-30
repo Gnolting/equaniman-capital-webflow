@@ -71,7 +71,7 @@ const ContactForm = () => {
     <section id="contact" className="py-16 bg-gradient-to-br from-slate-50 to-gray-100">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+          <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">
             {t('contact.title')}
           </h2>
         </div>
@@ -79,7 +79,7 @@ const ContactForm = () => {
         <div className="max-w-xl mx-auto">
           <Card className="bg-white border border-gray-200 rounded-lg shadow-sm animate-fade-in">
             <CardHeader className="pb-4">
-              <CardTitle className="text-lg bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-center">
+              <CardTitle className="text-lg bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 text-center">
                 {t('contact.form_title')}
               </CardTitle>
             </CardHeader>
@@ -147,7 +147,7 @@ const ContactForm = () => {
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full h-10 text-white font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 transition-all duration-200 border-0 rounded-md"
+                  className="w-full h-10 text-white font-medium bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 transition-all duration-200 border-0 rounded-md"
                 >
                   {isSubmitting ? t('contact.sending') : t('contact.submit_button')}
                 </Button>

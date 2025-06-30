@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -62,7 +63,7 @@ const CompanyServices = () => {
             <TabsContent value="quienes-somos" className="mt-6">
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-xl">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-center">
+                  <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 text-center">
                     {t('company.title')}
                   </h2>
                   <div className="max-w-4xl mx-auto prose text-gray-700 space-y-4 text-sm md:text-base">
@@ -78,7 +79,7 @@ const CompanyServices = () => {
             <TabsContent value="vision" className="mt-6">
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-xl">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-center">
+                  <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 text-center">
                     {t('vision.title')}
                   </h2>
                   <div className="max-w-4xl mx-auto prose text-gray-700 space-y-4 text-sm md:text-base">
@@ -92,7 +93,7 @@ const CompanyServices = () => {
             <TabsContent value="proposito" className="mt-6">
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-xl">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-center">
+                  <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 text-center">
                     {t('purpose.title')}
                   </h2>
                   <div className="max-w-4xl mx-auto prose text-gray-700 space-y-4 text-sm md:text-base">
@@ -111,7 +112,7 @@ const CompanyServices = () => {
 
         {/* Services */}
         <div className="animate-fade-in">
-          <h2 className="text-3xl font-bold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+          <h2 className="text-3xl font-bold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">
             {t('services.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -120,7 +121,7 @@ const CompanyServices = () => {
                 <div 
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(0, 71, 171, 0.8), rgba(138, 43, 226, 0.8), rgba(218, 112, 214, 0.8)), url('${service.image}')`
+                    backgroundImage: `linear-gradient(rgba(85, 124, 255, 0.8), rgba(74, 111, 231, 0.8), rgba(62, 98, 212, 0.8)), url('${service.image}')`
                   }}
                 />
                 <CardContent className="relative z-10 p-6 h-full flex flex-col justify-center items-center text-center text-white">
@@ -128,7 +129,7 @@ const CompanyServices = () => {
                     <service.icon className="w-6 h-6 text-gray-300" />
                   </div>
                   <div 
-                    className="text-lg font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300"
+                    className="text-lg font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-100"
                   >
                     {service.title}
                   </div>
