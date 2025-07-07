@@ -22,13 +22,13 @@ const HeroSection = () => {
         }}
       />
       
-      {/* Optional background image overlay with blue filter - positioned much lower */}
+      {/* Optional background image overlay with blue filter - positioned higher */}
       <div 
         className="absolute inset-0 opacity-20"
         style={{
           backgroundImage: 'url("/lovable-uploads/bd1fa329-19bd-4864-bb04-d2f776fccda4.png")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center 80%',
+          backgroundPosition: 'center 40%',
           filter: 'hue-rotate(200deg) saturate(1.5) brightness(0.8)',
           mixBlendMode: 'overlay'
         }}
