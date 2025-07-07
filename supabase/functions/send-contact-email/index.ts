@@ -34,7 +34,7 @@ const handler = async (req: Request): Promise<Response> => {
     
     const { name, email, message }: ContactEmailRequest = await req.json();
 
-    console.log("Sending contact form email:", { name, email });
+    console.log("Sending contact form email to noltinggonzalo@gmail.com:", { name, email });
 
     // Send email to Equanima Capital
     const emailResponse = await resend.emails.send({
