@@ -44,11 +44,6 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-700 mt-6 pt-6 text-center text-slate-400 text-xs">
-          <p>
-            {t('footer.admin_note')}
-          </p>
-        </div>
       </div>
     </footer>
   );
